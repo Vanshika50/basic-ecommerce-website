@@ -1,0 +1,47 @@
+@import "tailwindcss";
+body{
+    background: #000;
+    
+}
+.zoom-in-zoom-out {
+  padding:13px 30px;
+  display: flex;
+  background-color: #33450B;
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-weight: 700;
+  animation: zoom-in-zoom-out 3s ease-out infinite;
+  
+}
+.zoom-in-zoom-out:hover{
+    background-color: #565f45;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: rotateLoader 1s linear infinite;
+}
+
+@keyframes rotateLoader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
