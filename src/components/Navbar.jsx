@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className="flex items-center justify-between py-3 h-20 px-3 sm:px-4 md:px-6 bg-[#222121] text-white border-b border-b-[#4e4d4d] sticky top-0 z-50">
       <div>
         <Link to="/" className="h-15 w-15">
-          <img src="/e-commerce Logo.png" alt="" className="h-15 w-15 cover rounded-4xl" />
-        </Link>
+          <img src={`${import.meta.env.BASE_URL}ecommerce-logo.png`} alt="" className="h-15 w-15 cover rounded-4xl" />
+            </Link>
         
       </div>
 
