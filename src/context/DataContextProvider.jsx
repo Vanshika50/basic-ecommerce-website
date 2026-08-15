@@ -17,8 +17,8 @@ const DataContextProvider = ({ children }) => {
     const fetchProducts = async () => {
       try {
         setloading(true);
-        const response = await axios.get("https://fakestoreapi.com/products");
-        setproducts(response.data);
+        const response = await axios.get("https://dummyjson.com/products?limit=194");
+        setproducts(response.data.products);
       } catch (error) {
         console.log(error);
       } finally {

@@ -4,6 +4,7 @@ import ProductCard from "../components/ProductCard";
 import { RiLoader4Line } from "react-icons/ri";
 
 const Products = () => {
+  
   // which category is currently picked (starts as "all")
   const [category, setCategory] = useState("all");
 
@@ -24,6 +25,7 @@ const Products = () => {
 
     // keep this product only if BOTH checks pass
     return titleMatches && categoryMatches;
+  
   });
 
   // list of all unique categories, with "all" added at the startnpm install react-toastify
